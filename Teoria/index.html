@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Git y Github</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+
+        <section>
+            <h1>GIT y GITHUB</h1>
+            <h2>Que es Git</h2>
+            <p>Git es un sistema de control de versiones distribuido, diseñado por Linus Torvalds. Está
+                optimizado para guardar cambios de forma incremental. Permite contar con un historial,
+                regresar a una versión anterior y agregar funcionalidades.
+                Además, es capaz de llevar un registro de los cambios que otras personas realicen en los
+                archivos, gracias a GitHub, donde podemos almacenar y compartir nuestros proyectos de
+                forma gratuita. Es multiplataforma, es decir, es compatible con Linux, MacOS y Windows. En
+                la máquina local se encuentra Git, se utiliza bajo la terminal o línea de comandos y tiene
+                comandos como merge, pull, add, commity rebase, entre otros.
+            <ul>
+                <span>Que se puede hacer con GIT</span>
+                <li>Manejar distintas versiones del proyecto.</li>
+                <li>Guardar el historial o guardar todas las versiones de los
+                    proyecto.</li>
+                <li>Trabajar simultáneamente sobre un mismo proyecto.</li>
+            </ul>
+            </p>
+            <h2>¿ Como funciona GIT ?</h2>
+            <p>Git almacena instantáneas de un mini sistema de archivos. Cada vez que
+                confirmamos un cambio, Git toma una "foto" del aspecto del proyecto en ese
+                momento y crea una referencia a esa instantánea. Si un archivo no cambió
+                Git sólo crea un enlace a la imagen anterior idéntica que tiene almacenada.
+            </p>
+            <div class="centrar"><img src="img/imagen1.jpg" alt="imagen 1"></div>
+
+            <h2>Terminología</h2>
+            <p>
+            <ul>
+                <li><span class="marcado">Repositorio: </span>es la carpeta principal donde se encuentran almacenados
+                    los archivos que componen el proyecto. El directorio contiene
+                    metadatos gestionados por Git, de manera que el proyecto es
+                    configurado como un repositorio local.</li>
+                <li><span class="marcado">Commit: </span>un commit es el estado de un proyecto en un determinado
+                    momento de la historia del mismo, imaginemos esto como punto por
+                    punto cada uno de los cambios que van pasando. Depende de nosotros
+                    determinar cuántos y cuales archivos incluirá cada commit</li>
+                <li><span class="marcado">Rama (branch): </span> una rama es una línea alterna del tiempo en la historia
+                    de nuestro repositorio. Funciona para crear features, arreglar bugs,
+                    experimentar, sin afectar la versión estable o principal del proyecto. La
+                    rama principal por defecto es master.
+                </li>
+                <li><span class="marcado">Pull Request:</span> en proyectos con un equipo de trabajo, cada persona
+                    puede trabajar en una rama distinta, pero llegado el momento puede
+                    pasar que dicha rama se tenga que unir a la rama principal. Para eso se
+                    crea un <span>pull request</span> donde comunicamos el código que incluye los
+                    cambios, es revisado, comentado y aprobado para darle <span>merge</span>. En el
+                    contexto de GIT, merge significa unir dos trabajos, en este caso la rama
+                    branch con la rama master.
+                </li>
+            </ul>
+            </p>
+
+            <h2>Flujo de trabajo</h2>
+            <p>
+                Git registra en nuestro directorio local los cambios que se produzcan en los archivos o código, cada vez
+                que se lo indiquemos. De esta forma podemos “viajar en el tiempo” revirtiendo cambios o restaurando
+                versiones de código.Esto puede hacerse localmente o deforma remota (servidor externo).
+            </p>
+
+            <p><span>Working directory</span> es nuestro directorio de trabajo. Cada vez que queremos agregar un archivo
+                al <span>staging area</span>, usamos <span>gitadd</span>.Luego, cuando queremos establecer un punto de restauración, ejecutamos
+                <span>git commit</span>, y los archivos son actualizados en el repositorio <span>(repository)</span>.
+            </p>
+
+            <div class="contenedor-img">
+                <img src="img/imagen2.jpg" alt="imagen 2">
+                <img src="img/imagen3.jpg" alt="imagen 3">
+            </div>
+
+            <h2>Ramas</h2>
+            <p>
+                <ul>
+                    <li><span>Crear una rama</span> : <span class="marcado">git branch nombreBranch</span></li>
+                    <li><span>Unir la rama a Master</span>: <span class="marcado">merge nombreBranch</span></li>
+                    <li><span>Mostrar en qué rama nos encontramos</span>: <span class="marcado">git branch</span></li>
+                    <li><span>Cambiar a una rama determinada</span>: <span class="marcado">git checkout nombreBranch</span></li>
+                </ul>
+            </p>
+
+            <div class="contenedor-img">
+                <img src="img/imagen4.jpg" alt="imagen 4">
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
